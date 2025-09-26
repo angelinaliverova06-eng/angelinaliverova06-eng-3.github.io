@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: left;
+    font-size: 28px;
+}
+
+body{
+    background-color: #eaf0f7;
+    font-size:medium;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#nav{
+    color:rgb(66, 109, 228);
+    order: 3;
+}
+
+h2{
+    font-size: 20pt;
+    color: rgb(66, 109, 228);
+}
+
+nav, header, footer{
+    width: 100%;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    order: 1;
+}
+
+div#first{
+    background-color: rgb(151, 174, 238);
+    width: 100%;
+}
+
+div#center{
+    max-width: 960px;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+}
+
+.firsttable{
+    table-layout: fixed;
+    font-weight: solid;
+    font-size: 20px; 
+}
+
+img#logo{
+    float: left;
+    align-self: center;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+t2{
+    order: 2;
+    flex: 1;
+}
+
+.special{
+    border: 1px solid #000000;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.special th{
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+.special td{
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.special tbody tr:nth-child(odd){
+    background-color: #6892c6;
+}
+
+.special tbody tr:nth-child(even){
+    background-color: #abc9ee;
+}
+
+.bld{
+    font-weight: bold;
+}
+
+footer{
+    order: 4;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    header {
+        order: 1;
+        display: flex;
+        align-items: center;
+        background-color: rgb(151, 174, 238);
+        padding: 10px;
+        margin: 0;
+    }
+    
+    #nav {
+        order: 2;
+        background-color: rgb(66, 109, 228);
+        color: white;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+    }
+
+    div#first {
+        width: 100%;
+    }
+    
+    div#center {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    footer {
+        order: 4;
+        background-color: rgb(151, 174, 238);
+        padding: 10px;
+    }
+    
+    .special {
+        font-size: 14px;
+    }
+    
+    .special th,
+    .special td {
+        padding: 8px 5px;
+    }
+}

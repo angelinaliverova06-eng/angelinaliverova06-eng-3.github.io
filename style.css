@@ -66,14 +66,15 @@ img#logo{
     height: 70px;
 }
 
-t2{
+h2#t2{
     order: 2;
     flex: 1;
 }
 
 .special{
     border: 1px solid #000000;
-    table-layout: fixed;
+    table-layout: auto;
+    white-space: normal;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -102,12 +103,14 @@ t2{
 
 footer{
     order: 4;
+    background-color: rgb(151, 174, 238);
+    padding: 10px;
 }
 
 
 @media (max-width: 767px) {
     body {
-        display: flex;
+        display: grid;
         flex-direction: column;
         gap: 0;
     }
@@ -154,9 +157,13 @@ footer{
         padding: 15px;
         margin: 0;
     }
+
+    /*div#form{
+        order: 4;
+    }*/
     
     footer {
-        order: 4;
+        order: 5;
         background-color: rgb(151, 174, 238);
         padding: 10px;
     }

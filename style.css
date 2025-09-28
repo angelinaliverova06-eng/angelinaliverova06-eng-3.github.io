@@ -90,6 +90,7 @@ img#logo {
 }
 
 .special {
+    max-width: 490,4 px;
     border: 1px solid #000000;
     table-layout: auto;
     white-space: normal;

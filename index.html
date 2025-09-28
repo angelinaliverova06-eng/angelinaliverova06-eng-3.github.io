@@ -38,7 +38,6 @@
         </header>
     </div>
    
-    <br>
     <div id="center">
         <h2> <a id="t1"> Маркированный список гиперссылок</a> </h2>
         <ul>
@@ -192,75 +191,78 @@
     </div>
     
 
-    <h2> <a id="t3"> Форма </a> </h2>
-    <form class="form" action="#" method="post">
-    <fieldset>
-        <legend class="lead text-muted">Личная информация</legend>
+    <div class="forma">
+        <h2> <a id="t3"> Форма </a> </h2>
+        <form class="forma" action="#" method="post">
+        
+        <fieldset>
+            <legend class="lead text-muted">Личная информация</legend>
 
-        <label for="fio">ФИО:*</label>
-        <input type="text" id="fio" name="fio"/>
+            <label for="fio">ФИО:*</label>
+            <input type="text" id="fio" name="fio"/>
 
-        <div></div>
-        <label for="phone">Телефон:*</label>
-        <input type="tel" id="phone" name="phone"/>
+            <div></div>
+            <label for="phone">Телефон:*</label>
+            <input type="tel" id="phone" name="phone"/>
 
-        <div></div>
-        <label for="email">E-mail:*</label>
-        <input type="email" id="email" name="email"/>
+            <div></div>
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email"/>
 
-        <div></div>
-        <label for="birthdate">Дата рождения:*</label>
-        <input type="date" id="birthdate" name="birthdate"/>
-    </fieldset>
+            <div></div>
+            <label for="birthdate">Дата рождения:*</label>
+            <input type="date" id="birthdate" name="birthdate"/>
+        </fieldset>
 
-    <fieldset>
-        <legend>Пол</legend>
+        <fieldset>
+            <legend>Пол</legend>
+            <label>
+            <input type="radio" name="gender" value="male" required/>
+            Мужской
+            </label>
+            <label>
+            <input type="radio" name="gender" value="female" /> Женский
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Любимый язык программирования</legend>
+            <select name="languages" multiple size="6">
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskel">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+            </select>
+            <p>
+            <small class="lead text-muted"
+                >Для множественного выбора используйте Ctrl+клик (Cmd+клик на
+                Mac)</small
+            >
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Биография</legend>
+            <textarea
+            placeholder="Расскажите о себе..."
+            ></textarea>
+        </fieldset>
+
         <label>
-        <input type="radio" name="gender" value="male" required/>
-        Мужской
+            <input type="checkbox" name="agreement" required/> С контрактом
+            ознакомлен(а)
         </label>
-        <label>
-        <input type="radio" name="gender" value="female" /> Женский
-        </label>
-    </fieldset>
-    <fieldset>
-        <legend>Любимый язык программирования</legend>
-        <select name="languages" multiple size="6">
-        <option value="pascal">Pascal</option>
-        <option value="c">C</option>
-        <option value="cpp">C++</option>
-        <option value="javascript">JavaScript</option>
-        <option value="php">PHP</option>
-        <option value="python">Python</option>
-        <option value="java">Java</option>
-        <option value="haskel">Haskel</option>
-        <option value="clojure">Clojure</option>
-        <option value="prolog">Prolog</option>
-        <option value="scala">Scala</option>
-        </select>
-        <p>
-        <small class="lead text-muted"
-            >Для множественного выбора используйте Ctrl+клик (Cmd+клик на
-            Mac)</small
-        >
-        </p>
-    </fieldset>
 
-    <fieldset>
-        <legend>Биография</legend>
-        <textarea
-        placeholder="Расскажите о себе..."
-        ></textarea>
-    </fieldset>
-
-    <label>
-        <input type="checkbox" name="agreement" required/> С контрактом
-        ознакомлен(а)
-    </label>
-
-    <br>
-    <button type="submit" class="lead text">Сохранить</button>
-    </form>
+        <br>
+        <button type="submit" class="lead text">Сохранить</button>
+        </form>
+    </div>
 
     <br>
     <footer>

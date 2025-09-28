@@ -64,6 +64,8 @@ div#first {
 
 div#form{
     order: 3;
+    overflow-x: auto;
+    padding: 0 15px;
 }
 
 div#center {
@@ -90,10 +92,11 @@ img#logo {
 }
 
 .special {
-    max-width: 490,4 px;
     border: 1px solid #000000;
     table-layout: auto;
     white-space: normal;
+    width: 100%; 
+    max-width: 100%;
     margin-bottom: 20px;
     font-size: 14px;
 }
@@ -102,12 +105,16 @@ img#logo {
     font-weight: bold;
     padding: 8px 5px;
     border: 1px solid #000000;
+    word-wrap: break-word; 
+    white-space: normal;
 }
 
 .special td {
     padding: 8px 5px;
     border: 1px solid #000000;
     text-align: center;
+    word-wrap: break-word; 
+    white-space: normal;
 }
 
 .special tbody tr:nth-child(odd) {

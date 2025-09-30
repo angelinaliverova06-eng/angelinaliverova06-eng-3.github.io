@@ -16,6 +16,7 @@ body {
 
 h1 {
     text-align: left;
+    font-size: 24px;
 }
 
 h2 {
@@ -32,11 +33,12 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    order: 1;
     background-color: rgb(151, 174, 238);
 }
 
-nav {
-    color: black;
+#nav {
+    color: white;
     order: 2;
     background-color: rgb(66, 109, 228);
 }
@@ -53,6 +55,17 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 5px;
+}
+
+div#first {
+    background-color: rgb(151, 174, 238);
+    width: 100%;
+}
+
+div#form{
+    order: 3;
+    overflow-x: auto;
+    padding: 0 15px;
 }
 
 div#center {
@@ -166,6 +179,10 @@ footer {
         width: 600px;
         margin: 0 auto;
         padding: 20px;
+    }
+    
+    div#form{
+        order: 4;
     }
     
     img#logo {
